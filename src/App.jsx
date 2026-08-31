@@ -44,7 +44,7 @@ function App() {
 
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BACKEND_URL}/forgot-password`,
+          `https://backend-w8lr.onrender.com/forgot-password`,
           {
             method: 'POST',
             headers: {
@@ -82,7 +82,7 @@ function App() {
 
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BACKEND_URL}/reset-password`,
+          `https://backend-w8lr.onrender.com/reset-password`,
           {
             method: 'POST',
             headers: {
@@ -145,8 +145,8 @@ function App() {
 
     try {
       const endpoint = isLogin
-        ? `${import.meta.env.VITE_BACKEND_URL}/login`
-        : `${import.meta.env.VITE_BACKEND_URL}/signup`
+        ? `https://backend-w8lr.onrender.com/login`
+        : `https://backend-w8lr.onrender.com/signup`
 
       const body = isLogin
         ? {
